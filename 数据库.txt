@@ -1,0 +1,70 @@
+db_find数据库，共users和losts两个集合
+1、use db_find  创建/切换到db_find数据库
+2、往users集合中插入数据
+db.users.insert(
+[
+  {
+	"userId":"xw8ejsu6msg00abc",
+    "username":"Mike",
+    "password":"123456",
+    "signature":"hahahahaha",
+    "stars":20
+  }
+])
+3、往losts集合中插入数据,
+db.losts.insert(
+[
+  {
+	"lostId":"xw8ejsu6msg00000123456",
+    "title": "校园一卡通",
+    "thumb": "card.png",
+    "feature": ["姓名小明","学号003"],
+    "location": "饭堂",
+    "time": "星期二下午3点左右",
+    "contact": "13543332212",
+    "detail":"请到北四学生宿舍阿姨处领取",
+	"status":"0",
+	"publisher":"xw8ejsu6msg00000",
+	"owner":""
+  },
+  {
+	"lostId":"xw8ejsu6msg00000123457",
+    "title": "钱包",
+    "thumb": "wallet.png",
+    "feature": ["粉红色"],
+    "location": "33栋教学楼201教室",
+    "time": "9月6号晚上",
+    "contact": "18817222261",
+    "detail":"里面有身份证和银行卡,失主请通过电话联系我",
+	"status":"0",
+	"publisher":"xw8ejsu6msg000123",
+	"owner":"xw8ejsu6msg00000"
+  },
+  {
+	"lostId":"xw8ejsu6msg00000123458",
+    "title": "雨伞",
+    "thumb": "umbrella.png",
+    "feature": ["蓝色天堂伞","折叠完整"],
+    "location": "生活区篮球场",
+    "time": "星期三晚上",
+    "contact": "11222122235",
+    "detail":"无",
+	"status":"0",
+	"publisher":"xw8ejsu6msg00ww0",
+	"owner":"xw8ejsu6msg00000"
+  },
+  {
+	"lostId":"xw8ejsu6msg00000123459",
+    "title": "钥匙",
+    "thumb": "key.png",
+    "feature": ["大白装饰品"],
+    "location": "北二饭堂门口",
+    "time": "10月2号下午",
+    "contact": "18817222261",
+    "detail":"共有3跟钥匙，钥匙特征待失主标书确认",
+	"status":"0",
+	"publisher":"abcejsu6msg00ww0",
+	"owner":""
+  }
+]
+)
